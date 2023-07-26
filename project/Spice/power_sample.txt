@@ -1,0 +1,768 @@
+input A:  0 0 0 0
+input B:  0 0 0 0
+leakage power:  0
+input A:  0 0 0 0
+input B:  0 0 0 1
+leakage power:  -6.07826E-08
+input A:  0 0 0 0
+input B:  0 0 1 0
+leakage power:  -6.07826E-08
+input A:  0 0 0 0
+input B:  0 0 1 1
+leakage power:  -1.21565E-07
+input A:  0 0 0 0
+input B:  0 1 0 0
+leakage power:  -6.07826E-08
+input A:  0 0 0 0
+input B:  0 1 0 1
+leakage power:  -1.21565E-07
+input A:  0 0 0 0
+input B:  0 1 1 0
+leakage power:  -1.21565E-07
+input A:  0 0 0 0
+input B:  0 1 1 1
+leakage power:  -1.82348E-07
+input A:  0 0 0 0
+input B:  1 0 0 0
+leakage power:  -6.07826E-08
+input A:  0 0 0 0
+input B:  1 0 0 1
+leakage power:  -1.21565E-07
+input A:  0 0 0 0
+input B:  1 0 1 0
+leakage power:  -1.21565E-07
+input A:  0 0 0 0
+input B:  1 0 1 1
+leakage power:  -1.82348E-07
+input A:  0 0 0 0
+input B:  1 1 0 0
+leakage power:  -1.21565E-07
+input A:  0 0 0 0
+input B:  1 1 0 1
+leakage power:  -1.82348E-07
+input A:  0 0 0 0
+input B:  1 1 1 0
+leakage power:  -1.82348E-07
+input A:  0 0 0 0
+input B:  1 1 1 1
+leakage power:  -2.4313E-07
+input A:  0 0 0 1
+input B:  0 0 0 0
+leakage power:  -3.04174E-10
+input A:  0 0 0 1
+input B:  0 0 0 1
+leakage power:  -8.15951E-08
+input A:  0 0 0 1
+input B:  0 0 1 0
+leakage power:  -8.15952E-08
+input A:  0 0 0 1
+input B:  0 0 1 1
+leakage power:  -1.62886E-07
+input A:  0 0 0 1
+input B:  0 1 0 0
+leakage power:  -8.15951E-08
+input A:  0 0 0 1
+input B:  0 1 0 1
+leakage power:  -1.62886E-07
+input A:  0 0 0 1
+input B:  0 1 1 0
+leakage power:  -1.62886E-07
+input A:  0 0 0 1
+input B:  0 1 1 1
+leakage power:  -2.44177E-07
+input A:  0 0 0 1
+input B:  1 0 0 0
+leakage power:  -8.15952E-08
+input A:  0 0 0 1
+input B:  1 0 0 1
+leakage power:  -1.62886E-07
+input A:  0 0 0 1
+input B:  1 0 1 0
+leakage power:  -1.62886E-07
+input A:  0 0 0 1
+input B:  1 0 1 1
+leakage power:  -2.44177E-07
+input A:  0 0 0 1
+input B:  1 1 0 0
+leakage power:  -1.62886E-07
+input A:  0 0 0 1
+input B:  1 1 0 1
+leakage power:  -2.44177E-07
+input A:  0 0 0 1
+input B:  1 1 1 0
+leakage power:  -2.44177E-07
+input A:  0 0 0 1
+input B:  1 1 1 1
+leakage power:  -3.25468E-07
+input A:  0 0 1 0
+input B:  0 0 0 0
+leakage power:  -3.04179E-10
+input A:  0 0 1 0
+input B:  0 0 0 1
+leakage power:  -8.15951E-08
+input A:  0 0 1 0
+input B:  0 0 1 0
+leakage power:  -8.15952E-08
+input A:  0 0 1 0
+input B:  0 0 1 1
+leakage power:  -1.62886E-07
+input A:  0 0 1 0
+input B:  0 1 0 0
+leakage power:  -8.15952E-08
+input A:  0 0 1 0
+input B:  0 1 0 1
+leakage power:  -1.62886E-07
+input A:  0 0 1 0
+input B:  0 1 1 0
+leakage power:  -1.62886E-07
+input A:  0 0 1 0
+input B:  0 1 1 1
+leakage power:  -2.44177E-07
+input A:  0 0 1 0
+input B:  1 0 0 0
+leakage power:  -8.15951E-08
+input A:  0 0 1 0
+input B:  1 0 0 1
+leakage power:  -1.62886E-07
+input A:  0 0 1 0
+input B:  1 0 1 0
+leakage power:  -1.62886E-07
+input A:  0 0 1 0
+input B:  1 0 1 1
+leakage power:  -2.44177E-07
+input A:  0 0 1 0
+input B:  1 1 0 0
+leakage power:  -1.62886E-07
+input A:  0 0 1 0
+input B:  1 1 0 1
+leakage power:  -2.44177E-07
+input A:  0 0 1 0
+input B:  1 1 1 0
+leakage power:  -2.44177E-07
+input A:  0 0 1 0
+input B:  1 1 1 1
+leakage power:  -3.25468E-07
+input A:  0 0 1 1
+input B:  0 0 0 0
+leakage power:  -6.08344E-10
+input A:  0 0 1 1
+input B:  0 0 0 1
+leakage power:  -1.02408E-07
+input A:  0 0 1 1
+input B:  0 0 1 0
+leakage power:  -1.02408E-07
+input A:  0 0 1 1
+input B:  0 0 1 1
+leakage power:  -2.04207E-07
+input A:  0 0 1 1
+input B:  0 1 0 0
+leakage power:  -1.02408E-07
+input A:  0 0 1 1
+input B:  0 1 0 1
+leakage power:  -2.04207E-07
+input A:  0 0 1 1
+input B:  0 1 1 0
+leakage power:  -2.04207E-07
+input A:  0 0 1 1
+input B:  0 1 1 1
+leakage power:  -3.06006E-07
+input A:  0 0 1 1
+input B:  1 0 0 0
+leakage power:  -1.02408E-07
+input A:  0 0 1 1
+input B:  1 0 0 1
+leakage power:  -2.04207E-07
+input A:  0 0 1 1
+input B:  1 0 1 0
+leakage power:  -2.04207E-07
+input A:  0 0 1 1
+input B:  1 0 1 1
+leakage power:  -3.06006E-07
+input A:  0 0 1 1
+input B:  1 1 0 0
+leakage power:  -2.04207E-07
+input A:  0 0 1 1
+input B:  1 1 0 1
+leakage power:  -3.06006E-07
+input A:  0 0 1 1
+input B:  1 1 1 0
+leakage power:  -3.06006E-07
+input A:  0 0 1 1
+input B:  1 1 1 1
+leakage power:  -4.07806E-07
+input A:  0 1 0 0
+input B:  0 0 0 0
+leakage power:  -3.04173E-10
+input A:  0 1 0 0
+input B:  0 0 0 1
+leakage power:  -8.15951E-08
+input A:  0 1 0 0
+input B:  0 0 1 0
+leakage power:  -8.15951E-08
+input A:  0 1 0 0
+input B:  0 0 1 1
+leakage power:  -1.62886E-07
+input A:  0 1 0 0
+input B:  0 1 0 0
+leakage power:  -8.15952E-08
+input A:  0 1 0 0
+input B:  0 1 0 1
+leakage power:  -1.62886E-07
+input A:  0 1 0 0
+input B:  0 1 1 0
+leakage power:  -1.62886E-07
+input A:  0 1 0 0
+input B:  0 1 1 1
+leakage power:  -2.44177E-07
+input A:  0 1 0 0
+input B:  1 0 0 0
+leakage power:  -8.15951E-08
+input A:  0 1 0 0
+input B:  1 0 0 1
+leakage power:  -1.62886E-07
+input A:  0 1 0 0
+input B:  1 0 1 0
+leakage power:  -1.62886E-07
+input A:  0 1 0 0
+input B:  1 0 1 1
+leakage power:  -2.44177E-07
+input A:  0 1 0 0
+input B:  1 1 0 0
+leakage power:  -1.62886E-07
+input A:  0 1 0 0
+input B:  1 1 0 1
+leakage power:  -2.44177E-07
+input A:  0 1 0 0
+input B:  1 1 1 0
+leakage power:  -2.44177E-07
+input A:  0 1 0 0
+input B:  1 1 1 1
+leakage power:  -3.25468E-07
+input A:  0 1 0 1
+input B:  0 0 0 0
+leakage power:  -6.08345E-10
+input A:  0 1 0 1
+input B:  0 0 0 1
+leakage power:  -1.02408E-07
+input A:  0 1 0 1
+input B:  0 0 1 0
+leakage power:  -1.02408E-07
+input A:  0 1 0 1
+input B:  0 0 1 1
+leakage power:  -2.04207E-07
+input A:  0 1 0 1
+input B:  0 1 0 0
+leakage power:  -1.02408E-07
+input A:  0 1 0 1
+input B:  0 1 0 1
+leakage power:  -2.04207E-07
+input A:  0 1 0 1
+input B:  0 1 1 0
+leakage power:  -2.04207E-07
+input A:  0 1 0 1
+input B:  0 1 1 1
+leakage power:  -3.06006E-07
+input A:  0 1 0 1
+input B:  1 0 0 0
+leakage power:  -1.02408E-07
+input A:  0 1 0 1
+input B:  1 0 0 1
+leakage power:  -2.04207E-07
+input A:  0 1 0 1
+input B:  1 0 1 0
+leakage power:  -2.04207E-07
+input A:  0 1 0 1
+input B:  1 0 1 1
+leakage power:  -3.06006E-07
+input A:  0 1 0 1
+input B:  1 1 0 0
+leakage power:  -2.04207E-07
+input A:  0 1 0 1
+input B:  1 1 0 1
+leakage power:  -3.06006E-07
+input A:  0 1 0 1
+input B:  1 1 1 0
+leakage power:  -3.06006E-07
+input A:  0 1 0 1
+input B:  1 1 1 1
+leakage power:  -4.07806E-07
+input A:  0 1 1 0
+input B:  0 0 0 0
+leakage power:  -6.0836E-10
+input A:  0 1 1 0
+input B:  0 0 0 1
+leakage power:  -1.02408E-07
+input A:  0 1 1 0
+input B:  0 0 1 0
+leakage power:  -1.02408E-07
+input A:  0 1 1 0
+input B:  0 0 1 1
+leakage power:  -2.04207E-07
+input A:  0 1 1 0
+input B:  0 1 0 0
+leakage power:  -1.02408E-07
+input A:  0 1 1 0
+input B:  0 1 0 1
+leakage power:  -2.04207E-07
+input A:  0 1 1 0
+input B:  0 1 1 0
+leakage power:  -2.04207E-07
+input A:  0 1 1 0
+input B:  0 1 1 1
+leakage power:  -3.06006E-07
+input A:  0 1 1 0
+input B:  1 0 0 0
+leakage power:  -1.02408E-07
+input A:  0 1 1 0
+input B:  1 0 0 1
+leakage power:  -2.04207E-07
+input A:  0 1 1 0
+input B:  1 0 1 0
+leakage power:  -2.04207E-07
+input A:  0 1 1 0
+input B:  1 0 1 1
+leakage power:  -3.06006E-07
+input A:  0 1 1 0
+input B:  1 1 0 0
+leakage power:  -2.04207E-07
+input A:  0 1 1 0
+input B:  1 1 0 1
+leakage power:  -3.06006E-07
+input A:  0 1 1 0
+input B:  1 1 1 0
+leakage power:  -3.06006E-07
+input A:  0 1 1 0
+input B:  1 1 1 1
+leakage power:  -4.07806E-07
+input A:  0 1 1 1
+input B:  0 0 0 0
+leakage power:  -9.1252E-10
+input A:  0 1 1 1
+input B:  0 0 0 1
+leakage power:  -1.2322E-07
+input A:  0 1 1 1
+input B:  0 0 1 0
+leakage power:  -1.2322E-07
+input A:  0 1 1 1
+input B:  0 0 1 1
+leakage power:  -2.45528E-07
+input A:  0 1 1 1
+input B:  0 1 0 0
+leakage power:  -1.2322E-07
+input A:  0 1 1 1
+input B:  0 1 0 1
+leakage power:  -2.45528E-07
+input A:  0 1 1 1
+input B:  0 1 1 0
+leakage power:  -2.45528E-07
+input A:  0 1 1 1
+input B:  0 1 1 1
+leakage power:  -3.67836E-07
+input A:  0 1 1 1
+input B:  1 0 0 0
+leakage power:  -1.2322E-07
+input A:  0 1 1 1
+input B:  1 0 0 1
+leakage power:  -2.45528E-07
+input A:  0 1 1 1
+input B:  1 0 1 0
+leakage power:  -2.45528E-07
+input A:  0 1 1 1
+input B:  1 0 1 1
+leakage power:  -3.67836E-07
+input A:  0 1 1 1
+input B:  1 1 0 0
+leakage power:  -2.45528E-07
+input A:  0 1 1 1
+input B:  1 1 0 1
+leakage power:  -3.67836E-07
+input A:  0 1 1 1
+input B:  1 1 1 0
+leakage power:  -3.67836E-07
+input A:  0 1 1 1
+input B:  1 1 1 1
+leakage power:  -4.90143E-07
+input A:  1 0 0 0
+input B:  0 0 0 0
+leakage power:  -3.04182E-10
+input A:  1 0 0 0
+input B:  0 0 0 1
+leakage power:  -8.15951E-08
+input A:  1 0 0 0
+input B:  0 0 1 0
+leakage power:  -8.15951E-08
+input A:  1 0 0 0
+input B:  0 0 1 1
+leakage power:  -1.62886E-07
+input A:  1 0 0 0
+input B:  0 1 0 0
+leakage power:  -8.15951E-08
+input A:  1 0 0 0
+input B:  0 1 0 1
+leakage power:  -1.62886E-07
+input A:  1 0 0 0
+input B:  0 1 1 0
+leakage power:  -1.62886E-07
+input A:  1 0 0 0
+input B:  0 1 1 1
+leakage power:  -2.44177E-07
+input A:  1 0 0 0
+input B:  1 0 0 0
+leakage power:  -8.15951E-08
+input A:  1 0 0 0
+input B:  1 0 0 1
+leakage power:  -1.62886E-07
+input A:  1 0 0 0
+input B:  1 0 1 0
+leakage power:  -1.62886E-07
+input A:  1 0 0 0
+input B:  1 0 1 1
+leakage power:  -2.44177E-07
+input A:  1 0 0 0
+input B:  1 1 0 0
+leakage power:  -1.62886E-07
+input A:  1 0 0 0
+input B:  1 1 0 1
+leakage power:  -2.44177E-07
+input A:  1 0 0 0
+input B:  1 1 1 0
+leakage power:  -2.44177E-07
+input A:  1 0 0 0
+input B:  1 1 1 1
+leakage power:  -3.25468E-07
+input A:  1 0 0 1
+input B:  0 0 0 0
+leakage power:  -6.08355E-10
+input A:  1 0 0 1
+input B:  0 0 0 1
+leakage power:  -1.02408E-07
+input A:  1 0 0 1
+input B:  0 0 1 0
+leakage power:  -1.02408E-07
+input A:  1 0 0 1
+input B:  0 0 1 1
+leakage power:  -2.04207E-07
+input A:  1 0 0 1
+input B:  0 1 0 0
+leakage power:  -1.02408E-07
+input A:  1 0 0 1
+input B:  0 1 0 1
+leakage power:  -2.04207E-07
+input A:  1 0 0 1
+input B:  0 1 1 0
+leakage power:  -2.04207E-07
+input A:  1 0 0 1
+input B:  0 1 1 1
+leakage power:  -3.06006E-07
+input A:  1 0 0 1
+input B:  1 0 0 0
+leakage power:  -1.02408E-07
+input A:  1 0 0 1
+input B:  1 0 0 1
+leakage power:  -2.04207E-07
+input A:  1 0 0 1
+input B:  1 0 1 0
+leakage power:  -2.04207E-07
+input A:  1 0 0 1
+input B:  1 0 1 1
+leakage power:  -3.06006E-07
+input A:  1 0 0 1
+input B:  1 1 0 0
+leakage power:  -2.04207E-07
+input A:  1 0 0 1
+input B:  1 1 0 1
+leakage power:  -3.06006E-07
+input A:  1 0 0 1
+input B:  1 1 1 0
+leakage power:  -3.06006E-07
+input A:  1 0 0 1
+input B:  1 1 1 1
+leakage power:  -4.07806E-07
+input A:  1 0 1 0
+input B:  0 0 0 0
+leakage power:  -6.08352E-10
+input A:  1 0 1 0
+input B:  0 0 0 1
+leakage power:  -1.02408E-07
+input A:  1 0 1 0
+input B:  0 0 1 0
+leakage power:  -1.02408E-07
+input A:  1 0 1 0
+input B:  0 0 1 1
+leakage power:  -2.04207E-07
+input A:  1 0 1 0
+input B:  0 1 0 0
+leakage power:  -1.02408E-07
+input A:  1 0 1 0
+input B:  0 1 0 1
+leakage power:  -2.04207E-07
+input A:  1 0 1 0
+input B:  0 1 1 0
+leakage power:  -2.04207E-07
+input A:  1 0 1 0
+input B:  0 1 1 1
+leakage power:  -3.06006E-07
+input A:  1 0 1 0
+input B:  1 0 0 0
+leakage power:  -1.02408E-07
+input A:  1 0 1 0
+input B:  1 0 0 1
+leakage power:  -2.04207E-07
+input A:  1 0 1 0
+input B:  1 0 1 0
+leakage power:  -2.04207E-07
+input A:  1 0 1 0
+input B:  1 0 1 1
+leakage power:  -3.06006E-07
+input A:  1 0 1 0
+input B:  1 1 0 0
+leakage power:  -2.04207E-07
+input A:  1 0 1 0
+input B:  1 1 0 1
+leakage power:  -3.06006E-07
+input A:  1 0 1 0
+input B:  1 1 1 0
+leakage power:  -3.06006E-07
+input A:  1 0 1 0
+input B:  1 1 1 1
+leakage power:  -4.07806E-07
+input A:  1 0 1 1
+input B:  0 0 0 0
+leakage power:  -9.12525E-10
+input A:  1 0 1 1
+input B:  0 0 0 1
+leakage power:  -1.2322E-07
+input A:  1 0 1 1
+input B:  0 0 1 0
+leakage power:  -1.2322E-07
+input A:  1 0 1 1
+input B:  0 0 1 1
+leakage power:  -2.45528E-07
+input A:  1 0 1 1
+input B:  0 1 0 0
+leakage power:  -1.2322E-07
+input A:  1 0 1 1
+input B:  0 1 0 1
+leakage power:  -2.45528E-07
+input A:  1 0 1 1
+input B:  0 1 1 0
+leakage power:  -2.45528E-07
+input A:  1 0 1 1
+input B:  0 1 1 1
+leakage power:  -3.67836E-07
+input A:  1 0 1 1
+input B:  1 0 0 0
+leakage power:  -1.2322E-07
+input A:  1 0 1 1
+input B:  1 0 0 1
+leakage power:  -2.45528E-07
+input A:  1 0 1 1
+input B:  1 0 1 0
+leakage power:  -2.45528E-07
+input A:  1 0 1 1
+input B:  1 0 1 1
+leakage power:  -3.67836E-07
+input A:  1 0 1 1
+input B:  1 1 0 0
+leakage power:  -2.45528E-07
+input A:  1 0 1 1
+input B:  1 1 0 1
+leakage power:  -3.67836E-07
+input A:  1 0 1 1
+input B:  1 1 1 0
+leakage power:  -3.67836E-07
+input A:  1 0 1 1
+input B:  1 1 1 1
+leakage power:  -4.90143E-07
+input A:  1 1 0 0
+input B:  0 0 0 0
+leakage power:  -6.08348E-10
+input A:  1 1 0 0
+input B:  0 0 0 1
+leakage power:  -1.02408E-07
+input A:  1 1 0 0
+input B:  0 0 1 0
+leakage power:  -1.02408E-07
+input A:  1 1 0 0
+input B:  0 0 1 1
+leakage power:  -2.04207E-07
+input A:  1 1 0 0
+input B:  0 1 0 0
+leakage power:  -1.02408E-07
+input A:  1 1 0 0
+input B:  0 1 0 1
+leakage power:  -2.04207E-07
+input A:  1 1 0 0
+input B:  0 1 1 0
+leakage power:  -2.04207E-07
+input A:  1 1 0 0
+input B:  0 1 1 1
+leakage power:  -3.06006E-07
+input A:  1 1 0 0
+input B:  1 0 0 0
+leakage power:  -1.02408E-07
+input A:  1 1 0 0
+input B:  1 0 0 1
+leakage power:  -2.04207E-07
+input A:  1 1 0 0
+input B:  1 0 1 0
+leakage power:  -2.04207E-07
+input A:  1 1 0 0
+input B:  1 0 1 1
+leakage power:  -3.06006E-07
+input A:  1 1 0 0
+input B:  1 1 0 0
+leakage power:  -2.04207E-07
+input A:  1 1 0 0
+input B:  1 1 0 1
+leakage power:  -3.06006E-07
+input A:  1 1 0 0
+input B:  1 1 1 0
+leakage power:  -3.06006E-07
+input A:  1 1 0 0
+input B:  1 1 1 1
+leakage power:  -4.07806E-07
+input A:  1 1 0 1
+input B:  0 0 0 0
+leakage power:  -9.12536E-10
+input A:  1 1 0 1
+input B:  0 0 0 1
+leakage power:  -1.2322E-07
+input A:  1 1 0 1
+input B:  0 0 1 0
+leakage power:  -1.2322E-07
+input A:  1 1 0 1
+input B:  0 0 1 1
+leakage power:  -2.45528E-07
+input A:  1 1 0 1
+input B:  0 1 0 0
+leakage power:  -1.2322E-07
+input A:  1 1 0 1
+input B:  0 1 0 1
+leakage power:  -2.45528E-07
+input A:  1 1 0 1
+input B:  0 1 1 0
+leakage power:  -2.45528E-07
+input A:  1 1 0 1
+input B:  0 1 1 1
+leakage power:  -3.67836E-07
+input A:  1 1 0 1
+input B:  1 0 0 0
+leakage power:  -1.2322E-07
+input A:  1 1 0 1
+input B:  1 0 0 1
+leakage power:  -2.45528E-07
+input A:  1 1 0 1
+input B:  1 0 1 0
+leakage power:  -2.45528E-07
+input A:  1 1 0 1
+input B:  1 0 1 1
+leakage power:  -3.67836E-07
+input A:  1 1 0 1
+input B:  1 1 0 0
+leakage power:  -2.45528E-07
+input A:  1 1 0 1
+input B:  1 1 0 1
+leakage power:  -3.67836E-07
+input A:  1 1 0 1
+input B:  1 1 1 0
+leakage power:  -3.67836E-07
+input A:  1 1 0 1
+input B:  1 1 1 1
+leakage power:  -4.90143E-07
+input A:  1 1 1 0
+input B:  0 0 0 0
+leakage power:  -9.12525E-10
+input A:  1 1 1 0
+input B:  0 0 0 1
+leakage power:  -1.2322E-07
+input A:  1 1 1 0
+input B:  0 0 1 0
+leakage power:  -1.2322E-07
+input A:  1 1 1 0
+input B:  0 0 1 1
+leakage power:  -2.45528E-07
+input A:  1 1 1 0
+input B:  0 1 0 0
+leakage power:  -1.2322E-07
+input A:  1 1 1 0
+input B:  0 1 0 1
+leakage power:  -2.45528E-07
+input A:  1 1 1 0
+input B:  0 1 1 0
+leakage power:  -2.45528E-07
+input A:  1 1 1 0
+input B:  0 1 1 1
+leakage power:  -3.67836E-07
+input A:  1 1 1 0
+input B:  1 0 0 0
+leakage power:  -1.2322E-07
+input A:  1 1 1 0
+input B:  1 0 0 1
+leakage power:  -2.45528E-07
+input A:  1 1 1 0
+input B:  1 0 1 0
+leakage power:  -2.45528E-07
+input A:  1 1 1 0
+input B:  1 0 1 1
+leakage power:  -3.67836E-07
+input A:  1 1 1 0
+input B:  1 1 0 0
+leakage power:  -2.45528E-07
+input A:  1 1 1 0
+input B:  1 1 0 1
+leakage power:  -3.67836E-07
+input A:  1 1 1 0
+input B:  1 1 1 0
+leakage power:  -3.67836E-07
+input A:  1 1 1 0
+input B:  1 1 1 1
+leakage power:  -4.90143E-07
+input A:  1 1 1 1
+input B:  0 0 0 0
+leakage power:  -1.21671E-09
+input A:  1 1 1 1
+input B:  0 0 0 1
+leakage power:  -1.44033E-07
+input A:  1 1 1 1
+input B:  0 0 1 0
+leakage power:  -1.44033E-07
+input A:  1 1 1 1
+input B:  0 0 1 1
+leakage power:  -2.86849E-07
+input A:  1 1 1 1
+input B:  0 1 0 0
+leakage power:  -1.44033E-07
+input A:  1 1 1 1
+input B:  0 1 0 1
+leakage power:  -2.86849E-07
+input A:  1 1 1 1
+input B:  0 1 1 0
+leakage power:  -2.86849E-07
+input A:  1 1 1 1
+input B:  0 1 1 1
+leakage power:  -4.29665E-07
+input A:  1 1 1 1
+input B:  1 0 0 0
+leakage power:  -1.44033E-07
+input A:  1 1 1 1
+input B:  1 0 0 1
+leakage power:  -2.86849E-07
+input A:  1 1 1 1
+input B:  1 0 1 0
+leakage power:  -2.86849E-07
+input A:  1 1 1 1
+input B:  1 0 1 1
+leakage power:  -4.29665E-07
+input A:  1 1 1 1
+input B:  1 1 0 0
+leakage power:  -2.86849E-07
+input A:  1 1 1 1
+input B:  1 1 0 1
+leakage power:  -4.29665E-07
+input A:  1 1 1 1
+input B:  1 1 1 0
+leakage power:  -4.29665E-07
+input A:  1 1 1 1
+input B:  1 1 1 1
+leakage power:  -5.72481E-07

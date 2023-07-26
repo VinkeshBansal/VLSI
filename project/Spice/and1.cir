@@ -1,0 +1,55 @@
+.INCLUDE 22nm_MGK.pm
+
+
+*NAND GATE 
+
+****Parameters**********
+.PARAM Lmin=22n
+.PARAM Wmin=22n
+.PARAM XX=1
+.PARAM tr=10p
+.PARAM pvdd= 1
+
+.temp 25
+
+***Supply**************
+vgndd gndd! 0 dc=0
+vvddd vddd! 0 dc='pvdd'
+
+
+****Capacitive load******
+Cout node6 0 2f
+
+*MOSNAME drain gate source body type w l
+
+****Net-list*************
+Mp1	node5	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp2	node5	nodeB	vddd! 	vddd! 	pmos W={2*XX*Wmin} L={Lmin} 
+Mn1	node4	nodeA	gndd! 	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn2	node5	nodeB	node4 	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn3 node6   node5   gndd!   gndd!   nmos W={1*XX*Wmin} L={Lmin}
+Mp3 node6   node5   vddd!   vddd!   pmos W={2*XX*Wmin} L={Lmin}  
+
+
+
+
+*******input**********
+VinA nodeA 0 PWL (0 1 tr 0 1000p 0 {1000p+tr} 1 1500p 1 {1500p+tr} 0 2000p 0 {2000p+tr} 1 4000p 1 )
+VinB nodeB 0 PWL (0 1 tr 0 1000p 0 {1000p+tr} 1 3000p 1 {3000p+tr} 0 4000p 0 )
+
+.TRAN 0.1p {4000p}
+
+
+*measure
+* .meas tran delay_LHB trig V(nodeB) val=0.5 fall=2 targ V(node5) val=0.5 rise=3
+* .meas tran delay_HLA trig V(nodeA) val=0.5 rise=2 targ V(node5) val=0.5 fall=2
+* .meas tran delay_LHA trig V(nodeA) val=0.5 fall=2 targ V(node5) val=0.5 rise=2
+* .meas tran delay_HLB trig V(nodeB) val=0.5 rise=1 targ V(node5) val=0.5 fall=1
+
+ 
+.control
+run
+plot V(nodeA)+4 V(nodeB)+2 V(node6)
+.endc
+
+.end

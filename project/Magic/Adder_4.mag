@@ -1,0 +1,77 @@
+magic
+tech scmos
+timestamp 1668116499
+<< metal1 >>
+rect -5 581 3 617
+rect -285 574 3 581
+rect -285 544 -280 574
+rect -275 544 -270 555
+rect 33 553 41 617
+rect 62 578 70 617
+rect 96 595 104 617
+rect 466 607 475 618
+rect 62 570 225 578
+rect 217 553 225 570
+rect 488 563 498 618
+rect 279 557 498 563
+rect 530 553 540 618
+rect 33 548 95 553
+rect 90 545 95 548
+rect 100 547 193 553
+rect 100 545 105 547
+rect 217 545 473 553
+rect 478 545 540 553
+rect 553 551 563 618
+rect 553 545 919 551
+rect -35 334 -18 343
+rect 340 335 360 344
+rect 718 343 747 344
+rect 717 336 747 343
+rect 718 335 747 336
+rect -26 -13 -18 334
+rect 352 -13 360 335
+rect -382 -93 -375 -14
+rect -26 -19 0 -13
+rect 352 -19 378 -13
+rect -105 -93 -101 -32
+rect 270 -93 274 -31
+rect 648 -93 652 -31
+rect 739 -43 747 335
+rect 904 152 909 536
+rect 914 152 919 545
+rect 902 -43 906 -31
+rect 739 -49 906 -43
+rect 999 -93 1003 -31
+<< metal2 >>
+rect 79 599 466 607
+rect 79 563 87 599
+rect 104 590 248 595
+rect 243 584 248 590
+rect 243 580 909 584
+rect -270 555 87 563
+rect 193 557 285 563
+rect 193 553 197 557
+rect 904 541 909 580
+<< m2contact >>
+rect -275 555 -270 563
+rect 466 599 475 607
+rect 96 590 104 595
+rect 193 547 197 553
+rect 904 536 909 541
+use Half_Adder  Half_Adder_0
+timestamp 1668116499
+transform 0 1 900 -1 0 106
+box -46 -86 137 169
+use Full_Adder  Full_Adder_2
+timestamp 1668116499
+transform 0 1 -636 -1 0 911
+box 367 261 943 601
+use Full_Adder  Full_Adder_1
+timestamp 1668116499
+transform 0 1 117 -1 0 912
+box 367 261 943 601
+use Full_Adder  Full_Adder_0
+timestamp 1668116499
+transform 0 1 -261 -1 0 912
+box 367 261 943 601
+<< end >>

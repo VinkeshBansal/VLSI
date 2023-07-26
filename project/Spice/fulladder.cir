@@ -1,0 +1,83 @@
+.INCLUDE 22nm_MGK.pm
+
+
+*NAND GATE 
+
+****Parameters**********
+.PARAM Lmin=22n
+.PARAM Wmin=22n
+.PARAM XX=1
+.PARAM tr=10p
+.PARAM pvdd= 1
+
+.temp 25
+
+***Supply**************
+vgndd gndd! 0 dc=0
+vvddd vddd! 0 dc='pvdd'
+
+
+****Capacitive load******
+
+
+*MOSNAME drain gate source body type w l
+
+****Net-list*************
+Mn1	node11	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn2	node10	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn3	node10	nodeB	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn4	node9	nodeC	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn5	node9	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn6	node9	nodeB	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn7	node8	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn8	node7	nodeB	node8	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn9	node6	nodeC	node7	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn10	node6	node12	node9	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn11	node12	nodeC	node10	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn12	node12	nodeB	node11	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mp1	node1	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp2	node2	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp3	node2	nodeB	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp4	node3	nodeC	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp5	node3	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp6	node3	nodeB	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp7	node4	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp8	node5	nodeB	node4	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp9	node6	nodeC	node5	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp10	node6	node12	node3	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp11	node12	nodeC	node2	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp12	node12	nodeB	node1	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp13    nodesum node6  vddd!   vddd!    pmos W={2*XX*Wmin} L={Lmin}
+Mp14    nodecarry node12  vddd!   vddd!    pmos W={2*XX*Wmin} L={Lmin}
+Mn13    nodesum node6  gndd!   gndd!    nmos W={1*XX*Wmin} L={Lmin}
+Mn14    nodecarry node12  gndd!   gndd!    nmos W={1*XX*Wmin} L={Lmin}
+
+
+
+
+
+
+*******input**********
+
+
+VinA nodeA 0 PWL(0 0 500p 0 {500p+tr} 1 1500p 1)
+VinB nodeB 0 PWL(0 0 750p 0 {750p+tr} 1 1500p 1)
+VinC nodeC 0 PWL(0 0 500p 0 1500p 0)
+
+
+.TRAN 0.1p {4000p}
+
+
+*measure
+* .meas tran delay_LHB trig V(nodeB) val=0.5 fall=2 targ V(node5) val=0.5 rise=3
+* .meas tran delay_HLA trig V(nodeA) val=0.5 rise=2 targ V(node5) val=0.5 fall=2
+* .meas tran delay_LHA trig V(nodeA) val=0.5 fall=2 targ V(node5) val=0.5 rise=2
+* .meas tran delay_HLB trig V(nodeB) val=0.5 rise=1 targ V(node5) val=0.5 fall=1
+
+ 
+.control
+run
+plot V(nodeA) V(nodeB)+4 V(nodeC)+8 V(nodesum)+12 V(nodecarry)+16
+.endc
+
+.end

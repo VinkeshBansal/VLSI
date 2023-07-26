@@ -1,0 +1,28 @@
+magic
+tech scmos
+timestamp 1668100046
+<< metal1 >>
+rect 772 531 944 535
+rect 550 446 589 451
+rect 578 436 589 441
+rect 772 434 815 438
+rect 550 349 564 353
+rect 560 320 564 349
+rect 810 327 815 434
+rect 810 323 846 327
+rect 560 316 846 320
+rect 370 239 569 246
+<< metal2 >>
+rect 569 246 578 435
+<< m2contact >>
+rect 568 435 578 441
+rect 569 239 578 246
+use Half_Adder  Half_Adder_0
+timestamp 1668086124
+transform 1 0 413 0 1 347
+box -46 -86 137 169
+use Half_Adder  Half_Adder_1
+timestamp 1668086124
+transform 1 0 635 0 1 432
+box -46 -86 137 169
+<< end >>

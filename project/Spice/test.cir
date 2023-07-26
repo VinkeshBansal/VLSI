@@ -1,0 +1,218 @@
+.INCLUDE 22nm_MGK.pm
+
+
+*NAND GATE 
+
+****Parameters**********
+.PARAM Lmin=22n
+.PARAM Wmin=22n
+.PARAM XX=1
+.PARAM tr=10p
+.PARAM pvdd= 1
+
+.temp 25
+
+***Supply**************
+vgndd gndd! 0 dc=0
+vvddd vddd! 0 dc=1
+
+
+****Capacitive load******
+
+
+*MOSNAME drain gate source body type w l
+
+****Net-list*************
+.subckt adder nodeA nodeB nodeC nodesum nodecarry vddd! gndd!
+Mn1	node11	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn2	node10	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn3	node10	nodeB	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn4	node9	nodeC	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn5	node9	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn6	node9	nodeB	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn7	node8	nodeA	gndd!	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn8	node7	nodeB	node8	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn9	node6	nodeC	node7	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn10	node6	node12	node9	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn11	node12	nodeC	node10	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn12	node12	nodeB	node11	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mp1	node1	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp2	node2	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp3	node2	nodeB	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp4	node3	nodeC	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp5	node3	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp6	node3	nodeB	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp7	node4	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp8	node5	nodeB	node4	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp9	node6	nodeC	node5	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp10	node6	node12	node3	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp11	node12	nodeC	node2	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp12	node12	nodeB	node1	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp13    nodesum node6  vddd!   vddd!    pmos W={2*XX*Wmin} L={Lmin}
+Mp14    nodecarry node12  vddd!   vddd!    pmos W={2*XX*Wmin} L={Lmin}
+Mn13    nodesum node6  gndd!   gndd!    nmos W={1*XX*Wmin} L={Lmin}
+Mn14    nodecarry node12  gndd!   gndd!    nmos W={1*XX*Wmin} L={Lmin}
+
+.ends adder
+
+.subckt and nodeA nodeB node6 vddd! gndd!
+Mp1	node5	nodeA	vddd!	vddd! 	pmos W={2*XX*Wmin} L={Lmin}
+Mp2	node5	nodeB	vddd! 	vddd! 	pmos W={2*XX*Wmin} L={Lmin} 
+Mn1	node4	nodeA	gndd! 	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn2	node5	nodeB	node4 	gndd! 	nmos W={1*XX*Wmin} L={Lmin}
+Mn3 node6   node5   gndd!   gndd!   nmos W={1*XX*Wmin} L={Lmin}
+Mp3 node6   node5   vddd!   vddd!   pmos W={2*XX*Wmin} L={Lmin}  
+.ends and
+
+
+Xa1 nodeB3 nodeA3 nodeP vddd! gndd! and
+Xa2 nodeB2 nodeA3 nodeO vddd! gndd! and
+Xa3 nodeB3 nodeA2 nodeN vddd! gndd! and
+Xa4 nodeB3 nodeA1 nodeM vddd! gndd! and
+Xa5 nodeB1 nodeA3 nodeL vddd! gndd! and
+Xa6 nodeB2 nodeA2 nodeK vddd! gndd! and
+Xa7 nodeB1 nodeA2 nodeJ vddd! gndd! and
+Xa8 nodeB0 nodeA3 nodeI vddd! gndd! and
+Xa9 nodeB3 nodeA0 nodeH vddd! gndd! and 
+Xa10 nodeB2 nodeA1 nodeG vddd! gndd! and
+Xa11 nodeB1 nodeA1 nodeF vddd! gndd! and
+Xa12 nodeB0 nodeA2 nodeE vddd! gndd! and
+Xa13 nodeB2 nodeA0 nodeD vddd! gndd! and
+Xa14 nodeB0 nodeA1 nodeC vddd! gndd! and
+Xa15 nodeB1 nodeA0 nodeB vddd! gndd! and
+Xa16 nodeB0 nodeA0 nodeP0 vddd! gndd! and
+
+Xf1 nodeB nodeC 0 nodeP1 nodeha1c vddd! gndd! adder
+Xf2 nodeE nodeF 0 nodeha2s nodeha2c vddd! gndd! adder
+Xf3 nodeI nodeJ 0 nodeha3s nodeha3c vddd! gndd! adder
+Xf4 nodeN nodeO nodefa7c nodefa4s nodefa4c vddd! gndd! adder
+Xf5 nodeD nodeha1c nodeha2s nodeP2 nodefa5c vddd! gndd! adder
+Xf6 nodeG nodeha2c nodeha3s nodefa6s nodefa6c vddd! gndd! adder
+Xf7 nodeK nodeL nodeha3c nodefa7s nodefa7c vddd! gndd! adder
+Xf8 nodeP nodefa4c nodefa12c nodeP6 nodeC5 vddd! gndd! adder
+Xf9 nodefa5c nodefa6s nodeH nodeP3 nodefa9c vddd! gndd! adder
+Xf10 nodefa9c nodefa11s 0 nodeP4 nodeha10c vddd! gndd! adder
+Xf11 nodefa7s nodefa6c nodeM nodefa11s nodefa11c vddd! gndd! adder
+Xf12 nodeha10c nodefa11c nodefa4s nodeP5 nodefa12c vddd! gndd! adder
+
+
+Cout  nodeP0 0 2f
+Cout  nodeP1 0 2f
+Cout  nodeP2 0 2f
+Cout  nodeP3 0 2f
+Cout  nodeP4 0 2f
+Cout  nodeP5 0 2f
+Cout  nodeP6 0 2f
+Cout  nodeC5 0 2f
+
+* VinA0 nodeA0 0 PWL(0 1  1000p 1 {1000p+tr} 0 3000p 0 {3000p+tr} 1 4000p 1   )
+* VinA1 nodeA1 0 PWL(0 1  1000p 1 {1000p+tr} 0 3000p 0 {3000p+tr} 1 4000p 1  )
+* VinA2 nodeA2 0 PWL(0 1  1000p 1 {1000p+tr} 0 3000p 0 {3000p+tr} 1 4000p 1 )
+* VinA3 nodeA3 0 PWL(0 0  1000p 0 {1000p+tr} 1 3000p 1 {3000p+tr} 0 4000p 0 )
+* VinB0 nodeB0 0 PWL(0 1  1000p 1 {1000p+tr} 0 3000p 0 {3000p+tr} 1 4000p 1 )
+* VinB1 nodeB1 0 PWL(0 1  1000p 1 {1000p+tr} 0 3000p 0 {3000p+tr} 1 4000p 1 )
+* VinB2 nodeB2 0 PWL(0 0  1000p 0 {1000p+tr} 1 3000p 1 {3000p+tr} 0 4000p 0  )
+* VinB3 nodeB3 0 PWL(0 0  1000p 0 {1000p+tr} 1 3000p 1 {3000p+tr} 0 4000p 0  )
+
+
+*******input**********
+
+
+
+VinA0 nodeA0 0 dc = 0
+VinA1 nodeA1 0 dc = 0
+VinA2 nodeA2 0 dc = 0
+VinA3 nodeA3 0 dc = 0
+VinB0 nodeB0 0 dc = 0
+VinB1 nodeB1 0 dc = 0
+VinB2 nodeB2 0 dc = 0
+VinB3 nodeB3 0 dc = 0
+
+
+
+.TRAN 0.1p {10p}
+
+
+
+
+
+*measure
+* .meas tran delay_LHB trig V(nodeB) val=0.5 fall=2 targ V(node5) val=0.5 rise=3
+* .meas tran delay_HLA trig V(nodeA) val=0.5 rise=2 targ V(node5) val=0.5 fall=2
+* .meas tran delay_LHA trig V(nodeA) val=0.5 fall=2 targ V(node5) val=0.5 rise=2
+* .meas tran delay_HLB trig V(nodeB) val=0.5 rise=1 targ V(node5) val=0.5 fall=1
+
+ 
+.control
+run
+let P7     = V(nodeC5) 
+let temp7  = P7[1]
+let P6     = V(nodeP6)
+let temp6  = P6[1]
+let P5     = V(nodeP5)
+let temp5  = P5[1]
+let P4     = V(nodeP4)
+let temp4  = P4[1]
+let P3     = V(nodeP3)
+let temp3  = P3[1]
+let P2     = V(nodeP2)
+let temp2  = P2[1]
+let P1     = V(nodeP1)
+let temp1  = P1[1]
+let P0     = V(nodeP0)
+let temp0  = P0[1]
+
+let VA3    = V(nodeA3)
+let inA3   = VA3[1]
+let VA2    = V(nodeA2)
+let inA2   = VA2[1]
+let VA1    = V(nodeA1)
+let inA1   = VA1[1]
+let VA0    = V(nodeA0)
+let inA0   = VA0[1]
+let VB3    = V(nodeB3)
+let inB3   = VB3[1]
+let VB2    = V(nodeB2)
+let inB2   = VB2[1]
+let VB1    = V(nodeB1)
+let inB1   = VB1[1]
+let VB0    = V(nodeB0)
+let inB0   = VB0[1]
+
+let IA3    = I(VinA3)
+let iinA3  = IA3[1]
+let IA2    = I(VinA2)
+let iinA2  = IA2[1]
+let IA1    = I(VinA1)
+let iinA1  = IA1[1]
+let IA0    = I(VinA0)
+let iinA0  = IA0[1]
+let IB3    = I(VinB3)
+let iinB3  = IB3[1]
+let IB2    = I(VinB2)
+let iinB2  = IB2[1]
+let IB1    = I(VinB1)
+let iinB1  = IB1[1]
+let IB0    = I(VinB0)
+let iinB0  = IB0[1]
+
+
+
+
+
+* let Vs = V(vddd)
+* let in = Vs[1]
+* let Is = I(gndd)
+* let iin = Is[1]
+
+let power = inA3*iinA3 + inB3*iinB3 +inA2*iinA2 +inB2*iinB2 +inA1*iinA1 +inB1*iinB1 +inA0*iinA0 +inB0*iinB0 
+
+
+* plot V(nodeP0)-2 V(nodeP1) V(nodeP2)+2 V(nodeP3)+4 V(nodeP4)+6 V(nodeP5)+8 V(nodeP6)+10 V(nodeC5)+12 
+echo "input A: ","$&inA3","$&inA2","$&inA1","$&inA0" >> power_sample.txt
+echo "input B: ","$&inB3","$&inB2","$&inB1","$&inB0" >> power_sample.txt
+echo "leakage power: ", "$&power", >> power_sample.txt
+quit
+.endc
+
+.end

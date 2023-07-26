@@ -1,0 +1,18 @@
+magic
+tech scmos
+timestamp 1668119437
+<< metal1 >>
+rect 33 80 42 83
+rect 38 70 42 80
+rect 33 33 42 37
+rect 35 3 42 9
+rect 33 0 42 3
+use NAND  NAND_0
+timestamp 1668119399
+transform 1 0 1 0 1 50
+box -1 -50 32 33
+use 2INV  2INV_0
+timestamp 1619542334
+transform 1 0 42 0 1 -41
+box 0 45 24 116
+<< end >>
